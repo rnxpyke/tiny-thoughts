@@ -1,7 +1,7 @@
 
-# Tiny thoughts on computer security
+# Tiny thoughts
 
-A collection of notes on computer security.
+A collection of notes on computer security and other stuff.
 
 - [2024-08: A sanse solution for the XZ debacle](./thoughts/sane_xz.md)
 - [Docker, Package Managements, and the wrong abstraction](./thoughts/docker.md)

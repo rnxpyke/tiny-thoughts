@@ -6,7 +6,7 @@ note_ext="md"
 NOTES_DIR="$THOUGHTS_DIR"
 if [ "$NOTES_DIR" = '' ]
 then
-	NOTES_DIR="$HOME/src/thoughts/thoughts"
+	NOTES_DIR="$HOME/src/github.com/rnxpyke/thoughts/thoughts"
 fi
 
 if [ "$EDITOR" = '' ]
