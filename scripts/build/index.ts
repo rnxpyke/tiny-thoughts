@@ -28,7 +28,15 @@ async function buildMarkdown(file: string, out: string) {
   Bun.write(out, html);
 }
 
-await buildMarkdown('README.md', path.join(outdir, 'index.html'));
+const index = path.join(outdir, 'index.html');
+await buildMarkdown('README.md', index);
+
+// set title of index
+const indexContent = await Bun.file(index).text();
+const update = new HTMLRewriter().on("head > title", { element(el) { el.setInnerContent("Tiny Thoughts") } }).transform(indexContent);
+Bun.write(index, update);
+
+
 for await (const file of mds.scan("./thoughts")) {
   const inp = path.join('./thoughts', file);
   const out = path.join(outdir, markdownToHtml(inp));
