@@ -3,6 +3,7 @@
 
 A collection of notes on computer security and other stuff.
 
+- [Writing a GameBoy emulator](./thoughts/gb-emulator.md)
 - [2024-08: A sanse solution for the XZ debacle](./thoughts/sane_xz.md)
 - [Docker, Package Managements, and the wrong abstraction](./thoughts/docker.md)
 - [The Confused Deputy](./thoughts/confused-deputy.md)
